@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 571 635" fill="none" role="img" aria-label="WashU Journal of Economics">
+  <g fill="none" stroke-width="30" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- Gold < bracket -->
+    <path d="M205 208 L18 323 L171 403" stroke="#c9a04a"/>
+    <!-- Gold upper radical: top bar and stem -->
+    <path d="M398 113 L553 18 L553 275" stroke="#c9a04a"/>
+    <!-- Navy lower radical: tick and stem -->
+    <path d="M321 485 L553 617 L553 430" stroke="#0a1f4d"/>
+  </g>
+</svg>

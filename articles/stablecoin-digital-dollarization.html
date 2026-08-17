@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Advent of Digital Dollarization: Stablecoins, Foreign Economies, and Banking - WUJOE</title>
+  <meta name="description" content="Jack Powers and John Haase investigate the expected impact of stablecoins on foreign economies and banking, using Nigeria as a case study in digital dollarization." />
+  <!-- Link preview (LinkedIn, Slack, iMessage). After deploying, swap the two
+       image paths below for the absolute URL, e.g. https://your-domain/assets/og-cover.png -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="WashU Journal of Economics" />
+  <meta property="og:title" content="The Advent of Digital Dollarization: Stablecoins, Foreign Economies, and Banking - WUJOE" />
+  <meta property="og:description" content="Jack Powers and John Haase investigate the expected impact of stablecoins on foreign economies and banking, using Nigeria as a case study in digital dollarization." />
+  <meta property="og:image" content="../assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="WashU Journal of Economics" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Advent of Digital Dollarization: Stablecoins, Foreign Economies, and Banking - WUJOE" />
+  <meta name="twitter:description" content="Jack Powers and John Haase investigate the expected impact of stablecoins on foreign economies and banking, using Nigeria as a case study in digital dollarization." />
+  <meta name="twitter:image" content="../assets/og-cover.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=14f92fd7" />
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg" />
+  <script src="../script.js?v=19b71b5b" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand" aria-label="Washington University Journal of Economics - Home">
+        <svg class="brand-marks" viewBox="0 0 571 635" fill="none" aria-hidden="true">
+          <g fill="none" stroke-width="30" stroke-linecap="square" stroke-linejoin="miter">
+            <path class="mk-gold" d="M205 208 L18 323 L171 403"/>
+            <path class="mk-gold" d="M398 113 L553 18 L553 275"/>
+            <path class="mk-navy" d="M321 485 L553 617 L553 430"/>
+          </g>
+        </svg>
+        <span class="brand-text">
+          <span class="b-washu">WashU</span>
+          <span class="b-journal">Journal of</span>
+          <span class="b-econ">Economics</span>
+        </span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../articles.html" class="active">Articles</a></li>
+          <li><a href="../leadership.html">Leadership</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="paper-layout" id="main">
+
+    <!-- Sticky table of contents -->
+    <aside class="paper-toc" aria-label="Table of contents">
+      <p class="toc-label">In this article</p>
+      <ul>
+        <li><a href="#introduction" class="active">1. Introduction</a></li>
+        <li><a href="#acquisition">Acquisition of Stablecoins</a></li>
+        <li><a href="#banking">Effects on Banking</a></li>
+        <li><a href="#nigeria">Digital Dollarization in Nigeria</a></li>
+        <li><a href="#methods">Hypothesis and Methods</a></li>
+        <li><a href="#econometrics">2. Econometric Analysis</a></li>
+        <li><a href="#conclusion">3. Conclusion</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </aside>
+
+    <main class="paper-main">
+
+      <!-- Header -->
+      <header class="paper-head reveal">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+          <a href="../articles.html">Articles</a>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+          <span class="here">The Advent of Digital Dollarization</span>
+        </nav>
+        <span class="tag">Crypto-Asset Economy / Monetary Policy</span>
+        <h1>The Advent of Digital Dollarization: Investigating the Expected Impact of Stablecoins on Foreign Economies and Banking</h1>
+        <div class="paper-authors">
+          <span>Jack Powers</span>
+          <span class="amp">and</span>
+          <span>John Haase</span>
+        </div>
+        <p class="paper-affil">ECON 4240, Department of Economics, Washington University in St. Louis.</p>
+        <div class="paper-meta">
+          <span class="m-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            June 21, 2026
+          </span>
+        </div>
+      </header>
+
+      <!-- Hero image -->
+      <div class="paper-hero-img reveal">
+        <img src="../assets/topics/stablecoin.jpg?v=3f3365f6" alt="Illustration of a Tether stablecoin token balanced on a US dollar coin" loading="lazy" />
+      </div>
+
+      <!-- Abstract -->
+      <section class="abstract reveal">
+        <p class="a-label">Abstract</p>
+        <p>
+          Crypto assets are a new and evolving type of financial tool by which consumers and investors alike can take advantage of. However, the stablecoin is a much different type of digital asset; due to it's peg to the USD, it's not nearly as volatile as traditional cryptos like Bitcoin and Ethereum. There isn't significant yield on the stablecoin, nor is it high risk. Thus, what are the financial motivations of acquiring stablecoins? What incentives do stablecoins offer that traditional currency doesn't, including modern day forms of electronic payment, like transfers and debit cards? Finally, what impact can the accessibility of a digital USD substitute have on foreign economies? As we will investigate the case of Nigeria, Africa's largest crypto-based economy, stablecoin has short-run implications on inflation and, indirectly, on banking deposits, but we cannot be certain of long-run effects the introduction of stablecoin has within the Nigerian economy.
+        </p>
+      </section>
+
+      <div class="keywords reveal">
+        <span class="kw">Stablecoins</span>
+        <span class="kw">Digital dollarization</span>
+        <span class="kw">Nigeria</span>
+        <span class="kw">Granger causality</span>
+        <span class="kw">Banking deposits</span>
+        <span class="kw">Naira devaluation</span>
+      </div>
+
+      <div class="paper-body">
+
+        <!-- 1. Introduction -->
+        <section class="paper-section reveal" id="introduction">
+          <h2>1. Introduction</h2>
+          <p>
+            The historic reputation of private cryptocurrencies, like Bitcoin, Ethereum, and Dogecoin, among others, has been shaky and volatile. However, the creation of the stablecoin, which pegged digital assets to real assets, like the USD, ushered in a store of confidence and trust for digital currency. Traditionally, the typical consumer has been hesitant to hold volatile digital assets, like Bitcoin, due to the high risks and uncertainty associated with the crypto. However, recent advances in payment technology have led to a gradual shift in consumer behavior; people have started to hold more stablecoin rather than store money away in a savings account.
+          </p>
+          <p>
+            Though this is true on both a domestic and international scale, we will guide our focus on the domestic accounts to examine a few different effects. First, we will consider why it may be in the best interest of individuals to switch over from typical bank reserves to stable digital currencies, including the mechanisms of acquisition. Then, we will examine the theoretical impact of stablecoins on the intermediate financial institutions within the United States, looking at impacts on banking deposits and loaning standards. Finally, using the case example of Nigeria, we will investigate the advent of digital dollarization and examine the foreign impact of stablecoins in the macroeconomy and banking sector beyond the United States.
+          </p>
+        </section>
+
+        <!-- Acquisition of Stablecoins -->
+        <section class="paper-section reveal" id="acquisition">
+          <h2>Acquisition of Stablecoins</h2>
+          <p>
+            The digital financial landscape is not a new development; credit and debit cards have been around for decades, making cash relatively obsolete and making transactions quicker and more seamless. Since stablecoins are pegged to the dollar, their use case does not differ much from that of digital currency stored in banks. Due to the fact that stablecoins are decentralized, they do have the benefit that they do not rely on banks to conduct transactions. This makes them useful for time sensitive transactions that happen outside of banking hours. These transfers avoid traditional money-laundering safeguards, making them attractive for criminal enterprise as well. While stablecoins make up the majority of illicit crypto transfers, this amount is still an insignificant percentage of stablecoin trading volume [9].
+          </p>
+
+          <div class="figure figure-inset reveal">
+            <figure>
+              <div class="frame">
+                <img src="../assets/stablecoin-fig1.png?v=bfeefcc2" alt="Stacked area chart of stablecoin market capitalization by issuer from 2020 to 2025, showing growth to over 220 billion USD" loading="lazy" />
+              </div>
+              <figcaption>
+                <span class="fig-num">Figure 1.</span> Growth of Stablecoin Market Cap (in millions USD).
+              </figcaption>
+            </figure>
+          </div>
+
+          <p>
+            Stablecoins have also become a popular method of sending and holding US-based currency abroad. By sending stablecoins abroad on crypto exchanges, users can avoid the high costs of international money transfers associated with using traditional banking intermediaries. This benefit has led to increased adoption by workers in one country who want to send remittances home. Stablecoins already make up 3% of this $200 trillion market. For the holders outside of the US, stablecoins act as a hedge against inflation. On crypto exchange platforms such Coinbase, users can buy dollar-pegged stablecoins directly in foreign currency. This acts as a more efficient way to access the foreign exchange rate between local currencies and USD. It also removes many of the barriers to dollarization, such as currency controls set by governments. These incentives help to explain why, despite 97% of all stablecoins originating in the United States, 80% of all stablecoins are held outside of the US. In countries with high stablecoin adoption, this would lead to a net decrease in banking deposits and an increase in foreign currency entering the United States.
+          </p>
+        </section>
+
+        <!-- Effects on Banking -->
+        <section class="paper-section reveal" id="banking">
+          <h2>Effects on Banking</h2>
+          <p>
+            Much has been made about the potential effects of stablecoins on the US banking system. This is based on the logic that if individuals shift their assets from demand deposit accounts to stablecoins en masse, banks reserves and therefore available credit would suffer significantly. This is compounded by the fact that through a regulatory loophole, currently stablecoins compete directly with savings accounts. While stablecoin issuers don't pay their holders interest on their US Treasury bill reserves, they do pay platforms such as Coinbase, who then pass on some of those funds to their customers. For example, due to an agreement between Circle and Coinbase, Coinbase users who pay the $4.99/month fee for Coinbase One can get 3.5% on their USDC holdings (which are marketed as "cash," not cryptocurrency). These stablecoin savings are not used for loan creation and could theoretically lead to a contraction in lending. As things stand, the US Treasury has estimated the potential extent of this contraction at $6.6 trillion dollars. This dramatic number has been seized on by the American Bankers Association [2] in their lobbying efforts to more heavily regulate stablecoins. Wang [8] provides a lower estimate at a $65 billion to $1.26 trillion decrease in lending, depending on the level of adoption.
+          </p>
+
+          <div class="stat-row reveal">
+            <div class="stat"><span class="num">97% / 80%</span><span class="lbl">Share of stablecoins originating in the US vs. held outside it</span></div>
+            <div class="stat"><span class="num">$6.6T</span><span class="lbl">US Treasury's estimate of potential lending contraction</span></div>
+            <div class="stat"><span class="num">~1%</span><span class="lbl">Stablecoin market cap as a share of M2</span></div>
+          </div>
+
+          <p>
+            Despite this prediction, we were unable to find such a relationship between stablecoins and bank deposits. This could be for a number of different reasons. First, stablecoins have only been around for a decade or so, and it would take time to see these effects play out. Second, while stablecoins are growing, their total market cap is still lower than the amount that these predictions assume, and currently are equivalent to about 1% of M2. Finally, since much of this demand is coming from outside the US, we would not see the effects on US banking. This is the possibility we will focus more on in this paper.
+          </p>
+          <p>
+            Previous studies have also confirmed these findings. Cerutti, Eugenio, et al [3] found that stablecoins had only an indirect effect on bank deposits through downward pressure on short-term US Treasury yields. This lower short-term interest rate environment can temporarily decrease bank deposits as investors shift their money out of savings accounts.
+          </p>
+          <p>
+            The above discussion pertains to U.S. financial markets and banking. Even less literature is available on the foreign impacts of stablecoin adoption and growth. In the next section, we will explain the theoretical background of how stablecoin adoption in foreign countries affects local economies through inflation hedging and currency circulation. After, we will propose empirical evidence, in the case study of Nigeria, that supports the theoretical trend of digital dollarization.
+          </p>
+        </section>
+
+        <!-- Digital Dollarization in Nigeria -->
+        <section class="paper-section reveal" id="nigeria">
+          <h2>Digital Dollarization in Nigeria</h2>
+          <p>
+            As the global market for stablecoins grow, countries with high inflation are afforded a new opportunity to protect their wealth by holding USD-pegged digital currency. According to Emomotimi [4] and the 2023 Chainanalysis Report, Nigeria contains Africa's largest crypto-market. This is due to widespread inflation and Naira devaluation, on top of adopted peer-to-peer (P2P) payment systems adopted in 2020. Because stablecoins act as a peg to the USD, traditional dollarization trends are expected to be seen with the adoption of stablecoins in inflationary environments. Because of easier acquisition than regular USD, alongside low costs for remittances and transfer payments, stablecoins are a better choice for hedging against the Naira to preserve individual wealth.
+          </p>
+
+          <div class="figure figure-inset reveal">
+            <figure>
+              <div class="frame">
+                <img src="../assets/stablecoin-fig2.png?v=9e2c238b" alt="Dual-axis time series of the NGN per USD exchange rate against Nigerian P2P stablecoin transfer volume in Naira, monthly from January 2021 to December 2025" loading="lazy" />
+              </div>
+              <figcaption>
+                <span class="fig-num">Figure 2.</span> Aggregate Time Series of NGN/USD Exchange Rate (Blue) vs. P2P Transfers in Stablecoin, measured in Naira (Red).
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Hypothesis and Methods -->
+        <section class="paper-section reveal" id="methods">
+          <h2>Hypothesis and Methods</h2>
+          <p>
+            Based on our review of stablecoin literature, we hypothesize there will be several noticeable macroeconomic effects that the widespread adoption of USD-pegged stablecoin has had on Nigeria:
+          </p>
+
+          <ul>
+            <li>
+              <span class="vname">H<sub>0</sub>:</span> Due to limited and recent data, there may be no noticeable effects that stablecoins have on the Nigerian macroeconomy.
+            </li>
+            <li>
+              <span class="vname">H<sub>1</sub>:</span> Due to a potential digital dollarization induced by stablecoin, we will observe growth in the Nigerian demand for stablecoin during periods of inflation and Naira-devaluation, as Nigerian citizens hedge against uncertainty with stablecoins. Likewise, aggregate banking deposits will decrease with increased demand for stablecoins as consumers withdraw Naira to exchange for the pegged crypto-asset.
+            </li>
+          </ul>
+
+          <p>
+            Regarding the data we collected and used, we looked at 60 months, from January 2021 to January 2026. We tracked several variables that we believe track well with economic theory and the literature discussed above:
+          </p>
+
+          <ul>
+            <li><span class="vname">&Delta;NP2P<sub>t</sub>:</span> First differenced Nigerian Peer to Peer stablecoin transactions in Naira.</li>
+            <li><span class="vname">&Delta;FX<sub>t</sub>:</span> First differenced foreign exchange rate of NGN/USD.</li>
+            <li><span class="vname">&Delta;NCPI<sub>t</sub>:</span> First differenced Nigerian CPI inflation rate. Although there is economic argument on whether inflation is stationary or non-stationary, our ADF Unit Root tests suggest Nigerian inflation is non-stationary, so we first differenced CPI to be consistent with our test results.</li>
+            <li><span class="vname">&Delta;NBD<sub>t</sub>:</span> First differenced Nigerian Banking Deposits for consumers, as an aggregate (in billions Naira).</li>
+            <li><span class="vname">&Delta;NTB<sub>t</sub>:</span> First differenced yield rate on the 3-month (91 day) Nigerian Treasury bills.</li>
+          </ul>
+
+          <p>
+            Data was collected from Coingecko (a crypto-asset price tracker), the Federal Reserve Economic Database (FRED), and the Nigerian Central Bank. All monetary units are in Naira based on the average exchange rate for each month (NGN/USD). We decided to exclude 2020 from the data because that was the first year P2P systems were introduced and adopted in Nigeria. Likewise, data before 2020 is difficult to find due to Nigeria's limited central bank data and the relatively recent creation and adoption of stablecoins.
+          </p>
+          <p>
+            We also want to note that, when we refer to stablecoins in our analysis, we only considered data regarding USDT and USDC, as they constitute upwards of 80% of the total stablecoin market capitalization, making it a worthy proxy for the entire market size of stablecoin. Another important note is our use of Nigerian P2P systems as a proxy for stablecoin demand in Nigeria. Because we can't be 100% certain of the actual volume of stablecoin in Nigeria in a given time period, a good proxy to measure is the amount of P2P payment systems that use stablecoin (which can be directly measured in stablecoin units; we convert this to Naira at the average exchange rate NGN/USD for the period). We also use aggregate values, first differencing non-stationary variables where appropriate.
+          </p>
+        </section>
+
+        <!-- 2. Econometric Analysis -->
+        <section class="paper-section reveal" id="econometrics">
+          <h2>2. Econometric Analysis</h2>
+          <p>
+            Due to potential financial shocks within the Nigerian banking and crypto systems, we began by testing for specific events to ensure structural stability throughout the time-frame of the data, or at least account for it if any were present. The first was in February 2021, when the Nigerian Central Bank banned financial institutions from facilitating crypto transactions. However, since this was extremely early in the data set, no significant structural break was found that could have an impact on our assessment of stablecoin within the Nigerian economy. However, the Tinubu government floated the Naira in June 2023, which depreciated the Naira upwards of 40% overnight. A Chow test of significance indeed verifies that this was a structural break within the P2P market, with an F-statistic = 9.55, yielding a p-value &lt; 0.001. Thus, to account for this, we included a post2023 binary variable that would account for changes before and after June 2023.
+          </p>
+
+          <div class="figure figure-inset reveal">
+            <figure>
+              <div class="frame">
+                <img src="../assets/stablecoin-fig3.png?v=905fefc5" alt="Line chart of the NGN per USD exchange rate from January 2021 through 2025 with a dashed vertical line marking the June 2023 structural break" loading="lazy" />
+              </div>
+              <figcaption>
+                <span class="fig-num">Figure 3.</span> NGN/USD Exchange Rate (FX) and Structural Break.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="figure figure-inset reveal">
+            <figure>
+              <div class="frame">
+                <img src="../assets/stablecoin-fig4.png?v=c76e2868" alt="Indexed log-scale chart of Nigerian CPI, NGN/USD, and P2P crypto volume from 2021 to 2025 with a dashed line marking the structural break" loading="lazy" />
+              </div>
+              <figcaption>
+                <span class="fig-num">Figure 4.</span> Structural Break in the Trending Aggregate Variables.
+              </figcaption>
+            </figure>
+          </div>
+
+          <p>
+            To evaluate equilibrium relationships in how stablecoin acts as a digital form of dollarization, we analyzed the impacts of macroeconomic shocks on stablecoin P2P systems within Nigeria. Specifically, we considered how changes in CPI inflation, the NGN/USD exchange rate, yield rates of the Nigerian Treasury bill, and aggregate banking deposits was intertwined with changes in stablecoin demand. Using preliminary Vector Autoregression (VAR) and Granger Causality to investigate potential relationships among the variables, we uncovered the results listed in Table 1.
+          </p>
+
+          <div class="data-table-wrap reveal">
+            <table class="data-table">
+              <thead>
+                <tr><th>Variable (Impacts)</th><th>Variable Significance</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>&Delta;FX<sub>t&minus;2</sub> &rArr; &Delta;NP2P</td><td class="actual">p-value = .006</td></tr>
+                <tr><td>&Delta;NP2P<sub>t&minus;1</sub> &rArr; &Delta;NCPI<sub>t</sub></td><td class="actual">p-value = .0010</td></tr>
+                <tr><td>&Delta;FX<sub>t&minus;1</sub> &rArr; &Delta;NCPI</td><td class="actual">p-value = .006</td></tr>
+                <tr><td>&Delta;NCPI<sub>t&minus;1</sub> &rArr; &Delta;NBD</td><td class="actual">p-value = .061</td></tr>
+                <tr><td>&Delta;NTB<sub>t&minus;1</sub> &rArr; &Delta;FX</td><td class="actual">p-value = .042</td></tr>
+                <tr><td>&Delta;NTB<sub>t&minus;1</sub> &rArr; &Delta;NP2P</td><td class="actual">p-value = .050</td></tr>
+              </tbody>
+            </table>
+            <figcaption class="reveal" style="font-size:0.86rem;line-height:1.5;color:var(--mute);padding-left:0.9rem;border-left:2px solid var(--gold);margin-top:0.85rem;">
+              <span style="color:var(--navy);font-weight:600;">Table 1.</span> Granger Test Results.
+            </figcaption>
+          </div>
+
+          <p>
+            From these results, there are potential signs of a few economic mechanisms at hand. These results can be considered within the context of the post Naira float regime (June 2023 and onwards), as the main difference is the interaction between stablecoin P2P and CPI. Specifically, in the new regime, we observe that inflation responds more negatively with increases in P2P, which we will consider later in this analysis. Thus, to begin with a look at our variables, we cannot report that a direct change in short-term inflation will cause a significant shock to the demand for stablecoin in Nigeria, proxied through the P2P transfer payment system. However, we did find that &Delta;FX and &Delta;NP2P did have a significant Granger-cause on &Delta;CPI.
+          </p>
+          <p>
+            To be more precise with numbers, we found that, approximately, with a 100 NGN/USD depreciation in the Naira, this raises inflation, 1 month later (one period lag), by about 1.2 percentage points, on average. Likewise, with a $10,000 increase in stablecoin P2P (lagged one period), we can see a decrease in CPI by about 1.2 percentage points, on average. From an economic standpoint, this makes sense; as the Naira depreciates (&Delta;FX &uarr;), local prices increase due to rising &Delta;CPI. With an increased inflation rate, consumers are faced with the decision to substitute a weaker Naira for a more accessible and stable currency, the stablecoin, leading to less Naira in circulation, cooling inflation on the national scale.
+          </p>
+
+          <div class="figure figure-inset reveal">
+            <figure>
+              <div class="frame">
+                <img src="../assets/stablecoin-fig5.png?v=7594c88c" alt="Two impulse response function panels showing the fraction of mean squared error in Nigerian CPI due to shocks from the exchange rate and from P2P stablecoin volume, with 95 percent confidence bands" loading="lazy" />
+              </div>
+              <figcaption>
+                <span class="fig-num">Figure 5.</span> IRF: Short Run Impacts from FX on CPI and NP2P on CPI.
+              </figcaption>
+            </figure>
+          </div>
+
+          <p>
+            Likewise, we did find significant results regarding the influence of the devaluation of the Naira on changes in stablecoin demand (when &Delta;FX is lagged two periods). This finding is consistent within the context of digital dollarization, as Nigerians react to Naira devaluation by purchasing stablecoin as a hedge so they can hold onto more stable and reliable forms of payment. Even so, this path with increased demand for stablecoin is measured to have downward pressure on inflation, as displayed in Figures 5 and 6.
+          </p>
+          <p>
+            We also found that the Nigerian Treasury bill yields, lagged one period, also have a significant impact on the changes in the NGN/USD exchange; they were also found to have an influence on changes in stablecoin demand. Specifically, a 1% increase in the yield rate of the Nigerian Treasury bill (lagged one period) is associated with an approximate decrease of 1,744 Naira in the demand for stablecoin, and a 16 NGN/USD appreciation in Naira. Thus, with monetary tightening within Nigeria, we can see decreases in demand for stablecoin, which is consistent with economic theory.
+          </p>
+          <p>
+            As mentioned earlier in our paper, Cerutti, Eugenio, et al [3] found that changes in stablecoin demand impacted short term yield rates on the U.S. T-bills, which in turn had influence within the banking sector. Here, stablecoins are not pegged to any Nigerian currency or Treasury bills; thus, the change in demand for stablecoins shouldn't necessarily undergo direct simultaneity impact on the performance of yield rates or the Naira. Indirect mechanisms, however, are plausible within the context of this macroeconomic environment. Though our initial hypothesis was that stablecoins would adversely and directly affect aggregate banking deposits, our analysis does not support that proposition. Rather, we measured that changes in the CPI inflation rate had slightly more tangible effects on aggregate banking deposits, which could be interpreted as indirect influences from changes in stablecoin demand.
+          </p>
+
+          <div class="figure figure-inset reveal">
+            <figure>
+              <div class="frame">
+                <img src="../assets/stablecoin-fig6.png?v=01eba3cc" alt="Orthogonalized impulse response function showing the effect of a Nigerian CPI shock on aggregate banking deposits with 95 percent confidence bands" loading="lazy" />
+              </div>
+              <figcaption>
+                <span class="fig-num">Figure 6.</span> IRF: Nigerian CPI Shocks on Aggregate Banking Deposits in Nigeria.
+              </figcaption>
+            </figure>
+          </div>
+
+          <p>
+            Interestingly, we observed the opposite relationship between CPI and banking deposits than what we had initially expected; a 1 percentage point change in CPI increases aggregate banking deposits by about 1,430 Naira, on average. Since this is only marginally significant at the &alpha; = .1 level, this relationship complicates the story, as we would expect inflation to degrade banking deposits. Though we will not investigate this issue in this paper, it could theoretically be due to the relative attractiveness of deposit accounts versus the local alternative, which is the Naira.
+          </p>
+          <p>
+            This was similar to what was experienced in the United States with Treasury bills, as investigated in earlier research. Specifically, stablecoins have not had a direct and meaningful impact on banking deposits, but rather an indirect influence on the macroeconomy that induces consumers to shift out of deposits into something with greater expected return, like stablecoin or some other asset. Note that we have not measured significant impact on changes in stablecoin demand from changes in banking deposits; rather, this is merely a reflection that people will take their local money out of savings or checking accounts to invest in more reliable or higher yield-bearing assets.
+          </p>
+          <p>
+            However, these results a reflective of relationships between variables, but it doesn't necessarily describe the economic equilibrium that they may all share. To test for more general relationships within the Nigerian macroeconomy, we ran constant and linear trend Johansen cointegration tests among the 5 variables to test for long-run equilibriums. Unfortunately, we cannot provide promising results here; both the constant and linear trend fell below their trace critical values, with 56.33 &lt; 68.52 and 66.15 &lt; 77.74, respectively. Within the context of what we have reported before, this shows that our Granger results reflect short-term, endogenous impacts induced by stablecoin on the macroeconomic system of Nigeria. However, the cointegration test results suggest that stablecoin grows unbounded relative to the Nigerian macroeconomy; there are no variables that will eventually readjust stablecoin demand growth in Nigeria, implicating an possible exogenous relationship between stablecoin demand growth and the Nigerian economy.
+          </p>
+
+          <blockquote class="pquote">
+            Consumers are naturally shifting to more and more P2P systems, abandoning trust in the Naira.
+          </blockquote>
+
+          <p>
+            However, there is logic to this result within the context of stablecoin. Specifically, this cointegration result suggests stablecoin P2P transfers are potentially increasing in the long-run, and cannot be tamed by manipulating macroeconomic variables within Nigeria. Instead, consumers are naturally shifting to more and more P2P systems, abandoning trust in the Naira. Though this is theoretical and speculative, it should be something considered more carefully and taken seriously. In fact, this is likely similar foresight to the 2021 decision by the Nigerian Central Bank to limit crypto-issuance within the financial system, as the looming threat of instantly accessible, and stable, digital currency threatens to make the Naira obsolete.
+          </p>
+
+          <h3>2.1. Limitations</h3>
+          <p>
+            Though our tests are preliminary and perhaps not fully inclusive of all true trends in the Nigerian economy, it is evidence that further research is likely necessary. Inserting an exogenous currency into an inflationary economy has complications of its own, which suggests not all relevant variables were considered within the context of this research. Likewise, no causal effects can be determined here, and our interpretations reflect as such; they only mean to suggest there is a potential relationship among the variables at hand. On top of these econometric issues, data availability was also an issue, as the Nigerian Central Bank and crypto-exchanges have much different data frequency. For example, the Nigerian Central Bank has monthly frequency, but sources for crypto transfer volumes can have daily, or even minute, frequencies. This makes it difficult to compare across these data, even though we have adjusted as best we can using averages to compensate for the infrequency of Nigerian data.
+          </p>
+        </section>
+
+        <!-- 3. Conclusion -->
+        <section class="paper-section reveal" id="conclusion">
+          <h2>3. Conclusion</h2>
+          <p>
+            Our analysis reveals findings that tend to agree with underlying theory that is continuing to evolve as financial markets adjust to the expansion of crypto-assets. Specifically, the speculation that stablecoins can induce changes in banking deposits isn't entirely unbacked; we have found indirect impacts where P2P systems cause decreases in inflation, which in turn cause marginally significant changes in banking deposits (within the context of Nigeria). However, direct effects on banking were not found; thus, our initial hypothesis is partially supported by the dollarization trends we observe with changes in Nigerian CPI and the NGN/USD exchange rate, explained by changes in stablecoin demand.
+          </p>
+          <p>
+            Moreover, this paper supports the idea of digital dollarization that we are beginning to see with the evolution of crypto; as consumers have greater digital accessibility, they are able to electronically acquire USD equivalents by substituting out the Naira in response to shocks in the devaluation of the Naira. This, in turn, can cool inflation as the Naira is "taken out of circulation" by stablecoin issuers, which gradually helps to cool inflation in the short run. Though we found no significant long run cointegrations among the variables, we can affirm this is direction for future research. This is especially true as governments begin to implement new policies in response to the growth of the crypto markets. As the United States begins to regulate stablecoins under the new GENIUS Act, it's an indication that crypto markets are likely here to stay. With this in mind, countries with chronic inflation are susceptible to this new digital dollarization; with the seamless integration of stablecoins into an electronic wallet and their ease of accessibility, it appears that local currency can be rendered obsolete. Besides, why hold paper or devalued currency when one can hold electronic and stable currency?
+          </p>
+        </section>
+
+        <!-- References -->
+        <details class="references reveal" id="references">
+          <summary>
+            References
+            <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <ol>
+            <li>Adrian, Tobias, et al. "How Stablecoins Can Improve Payments and Global Finance." IMF Blog, International Monetary Fund, 4 Dec. 2025.</li>
+            <li>American Bankers Association Community Bankers Council. Letter to the United States Senate. 5 Jan. 2026.</li>
+            <li>Cerutti, Eugenio, et al. Stablecoin Shocks. IMF Working Paper no. WP/26/44, International Monetary Fund, Mar. 2026.</li>
+            <li>Emomotimi, Agama. "Cryptocurrency Adoption and Investor Protection in the Nigerian Securities Market." Nigerian Journal of Securities Market, vol. 6, no. 1, Dec. 2023.</li>
+            <li>Higginson, Matt, and Garry Spanz. "The Stable Door Opens: How Tokenized Cash Enables Next-Gen Payments." McKinsey &amp; Company, July 2025.</li>
+            <li>Kim, Kyungmin, et al. "Payment Stablecoins and Cross Border Payments: Benefits and Implications for Monetary Policy Implementation." FEDS Notes, Board of Governors of the Federal Reserve System, 30 Mar. 2026.</li>
+            <li>Oyelami, Abiodun, and Rotimi Ogundeji. "Bayesian Seasonal Autoregressive Integrated Moving Average: Modelling Two Decades of Inflation Dynamics in Nigeria." Science World Journal, vol. 20, no. 1, 2025, pp. 56-63.</li>
+            <li>Wang, Jessie Jiaxu. "Banks in the Age of Stablecoins: Some Possible Implications for Deposits, Credit, and Financial Intermediation." FEDS Notes, Board of Governors of the Federal Reserve System, 17 Dec. 2025.</li>
+            <li>"2025 Crypto Adoption and Stablecoin Usage Report," TRM Labs.</li>
+          </ol>
+        </details>
+
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Related articles -->
+  <section class="section" style="background: var(--paper-warm);">
+    <div class="container">
+      <div class="reveal" style="display: flex; justify-content: space-between; align-items: baseline; gap: 2rem; margin-bottom: var(--gap-4); flex-wrap: wrap;">
+        <h2 style="max-width: 22ch;">Related reviews.</h2>
+        <a href="../articles.html" class="btn-link">
+          Browse all articles
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="gallery reveal-stagger">
+        <a href="ai-midwestern-markets.html" class="article-card">
+          <div class="thumb"><img src="../assets/topics/ai-midwest.jpg?v=d4d2b6f4" alt="Illustration of a Midwestern town with factories, grain silos, a robot arm and a data dashboard, workers reviewing plans, beneath an AI chip motif" loading="lazy" /></div>
+          <div class="body">
+            <span class="tag">Technology and Growth</span>
+            <h3>How the Midwest Economy Can Benefit From Artificial Intelligence</h3>
+            <p class="byline"><span class="author">Sara Izhar and Josh Goodglick</span><span class="dot"></span><span>June 7, 2026</span></p>
+          </div>
+        </a>
+
+        <a href="hb3231-st-louis.html" class="article-card">
+          <div class="thumb"><img src="../assets/topics/hb3231.jpg?v=39ce0d1d" alt="Aerial rendering of the Cortex Innovation Community in St. Louis, showing mixed-use blocks, green space and a central boulevard" loading="lazy" /></div>
+          <div class="body">
+            <span class="tag">St. Louis Economy</span>
+            <h3>The Space and Place of St. Louis: The Economic Impact of HB 3231</h3>
+            <p class="byline"><span class="author">Suri Li and Harper Rowden</span><span class="dot"></span><span>May 31, 2026</span></p>
+          </div>
+        </a>
+
+        <!-- TEMPORARILY WITHDRAWN from the site at the authors' request, pending a more thorough revision. The article itself is untouched at articles/stl-school-funding.html. To restore, delete this comment wrapper (search: TEMPORARILY WITHDRAWN).
+        <a href="stl-school-funding.html" class="article-card">
+          <div class="thumb"><img src="../assets/topics/school-funding.jpg?v=7b87e75f" alt="Illustration of a one-room schoolhouse used as a coin bank, with a coin dropping into a slot in its roof" loading="lazy" /></div>
+          <div class="body">
+            <span class="tag">St. Louis Economy</span>
+            <h3>Fragmented Governance and School Funding Inequality in St. Louis</h3>
+            <p class="byline"><span class="author">Oleks Zolochevskyi and Nikki Zheng</span><span class="dot"></span><span>May 17, 2026</span></p>
+          </div>
+        </a>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">
+            <svg class="brand-marks" viewBox="0 0 571 635" fill="none" aria-hidden="true">
+              <g fill="none" stroke-width="30" stroke-linecap="square" stroke-linejoin="miter">
+                <path class="mk-gold" d="M205 208 L18 323 L171 403"/>
+                <path class="mk-gold" d="M398 113 L553 18 L553 275"/>
+                <path class="mk-navy" d="M321 485 L553 617 L553 430"/>
+              </g>
+            </svg>
+            <span class="brand-text">
+              <span class="b-washu">WashU</span>
+              <span class="b-journal">Journal of</span>
+              <span class="b-econ">Economics</span>
+            </span>
+          </a>
+          <p>An undergraduate review of the St. Louis, national, and international economy, published at Washington University in St. Louis since 2026.</p>
+        </div>
+        <div>
+          <h4>The Journal</h4>
+          <ul>
+            <li><a href="../articles.html">All articles</a></li>
+            <li><a href="../leadership.html">The team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:wujoe@wustl.edu">wujoe@wustl.edu</a></li>
+            <li>School of Arts and Sciences</li>
+            <li>St. Louis, Missouri</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>(c) 2026 Washington University Journal of Economics.</span>
+        <span>Written by students. Edited like a journal.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Close">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <figure>
+      <img src="" alt="" />
+      <div class="lb-caption"></div>
+    </figure>
+  </div>
+
+  <script src="paper.js?v=24be9a8e"></script>
+</body>
+</html>

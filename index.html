@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WUJOE - Washington University Journal of Economics</title>
+  <meta name="description" content="The Washington University Journal of Economics publishes student-led reviews of the St. Louis local economy, the United States national economy, and the international economy." />
+  <!-- Link preview (LinkedIn, Slack, iMessage). After deploying, swap the two
+       image paths below for the absolute URL, e.g. https://your-domain/assets/og-cover.png -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="WashU Journal of Economics" />
+  <meta property="og:title" content="WUJOE - Washington University Journal of Economics" />
+  <meta property="og:description" content="The Washington University Journal of Economics publishes student-led reviews of the St. Louis local economy, the United States national economy, and the international economy." />
+  <meta property="og:image" content="assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="WashU Journal of Economics" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WUJOE - Washington University Journal of Economics" />
+  <meta name="twitter:description" content="The Washington University Journal of Economics publishes student-led reviews of the St. Louis local economy, the United States national economy, and the international economy." />
+  <meta name="twitter:image" content="assets/og-cover.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=14f92fd7" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <script src="script.js?v=19b71b5b" defer></script>
+</head>
+<body>
+
+  <!-- Entrance animation flag. Inline and JS-only, so the hero is hidden from
+       first paint when animating, and renders normally when JS is off. -->
+  <script>document.documentElement.classList.add('intro');</script>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Washington University Journal of Economics - Home">
+        <svg class="brand-marks" viewBox="0 0 571 635" fill="none" aria-hidden="true">
+          <g fill="none" stroke-width="30" stroke-linecap="square" stroke-linejoin="miter">
+            <path class="mk-gold" d="M205 208 L18 323 L171 403"/>
+            <path class="mk-gold" d="M398 113 L553 18 L553 275"/>
+            <path class="mk-navy" d="M321 485 L553 617 L553 430"/>
+          </g>
+        </svg>
+        <span class="brand-text">
+          <span class="b-washu">WashU</span>
+          <span class="b-journal">Journal of</span>
+          <span class="b-econ">Economics</span>
+        </span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero section-navy" id="main">
+    <div class="hero-motifs" aria-hidden="true">
+      <span class="hm hm-eq" style="left:57%; top:8%;">&beta; = (X&prime;X)<sup>-1</sup>X&prime;y</span>
+      <span class="hm hm-eq" style="left:57%; top:14%;">y<sub>t</sub> = &alpha; + &beta;y<sub>t-1</sub> + &epsilon;<sub>t</sub></span>
+      <span class="hm hm-eq" style="left:57%; top:20%;">E[Y<sub>t+h</sub> | &Omega;<sub>t</sub>]</span>
+      <span class="hm hm-eq" style="left:57%; top:26%;">&Delta;ln Y = &Delta;ln A + &alpha;&Delta;ln K</span>
+      <span class="hm hm-note" style="left:57%; top:32%;">Estimation &middot; Forecasting</span>
+
+      <svg class="hm hm-dist" style="left:56%; top:35%;" viewBox="0 0 190 96" focusable="false">
+        <path d="M 4,88 C 40,88 46,10 95,10 C 144,10 150,88 186,88" fill="none" stroke="#fafaf6" stroke-width="2.2"/>
+        <path d="M 132,88 C 152,72 170,86 186,88 L 186,88 Z" fill="#c9a04a" opacity="0.45"/>
+        <line x1="4" y1="88" x2="186" y2="88" stroke="#fafaf6" stroke-width="1.4"/>
+        <line x1="95" y1="88" x2="95" y2="16" stroke="#fafaf6" stroke-width="1.2" stroke-dasharray="4 5"/>
+      </svg>
+
+      <svg class="hm hm-bars" style="left:76%; top:10%;" viewBox="0 0 120 90" focusable="false">
+        <g fill="#c9a04a">
+          <rect x="6"  y="54" width="16" height="30"/>
+          <rect x="30" y="42" width="16" height="42"/>
+          <rect x="54" y="46" width="16" height="38"/>
+          <rect x="78" y="26" width="16" height="58"/>
+          <rect x="102" y="14" width="16" height="70"/>
+        </g>
+        <line x1="0" y1="84" x2="120" y2="84" stroke="#fafaf6" stroke-width="1.6"/>
+      </svg>
+
+      <svg class="hm hm-sd" style="left:84%; top:44%;" viewBox="0 0 150 110" focusable="false">
+        <line x1="14" y1="8" x2="14" y2="96" stroke="#fafaf6" stroke-width="1.6"/>
+        <line x1="14" y1="96" x2="142" y2="96" stroke="#fafaf6" stroke-width="1.6"/>
+        <line x1="24" y1="18" x2="132" y2="86" stroke="#fafaf6" stroke-width="2.2"/>
+        <line x1="24" y1="86" x2="132" y2="18" stroke="#c9a04a" stroke-width="2.2"/>
+        <circle cx="78" cy="52" r="4.5" fill="#c9a04a"/>
+      </svg>
+
+      <svg class="hm hm-coins" style="left:72%; top:60%;" viewBox="0 0 150 78" focusable="false">
+        <g fill="none" stroke="#c9a04a" stroke-width="2.2">
+          <ellipse cx="38" cy="62" rx="30" ry="10"/>
+          <ellipse cx="38" cy="50" rx="30" ry="10"/>
+          <ellipse cx="38" cy="38" rx="30" ry="10"/>
+          <ellipse cx="104" cy="62" rx="30" ry="10"/>
+          <ellipse cx="104" cy="50" rx="30" ry="10"/>
+          <ellipse cx="104" cy="38" rx="30" ry="10"/>
+          <ellipse cx="104" cy="26" rx="30" ry="10"/>
+          <ellipse cx="104" cy="14" rx="30" ry="10"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-trend" aria-hidden="true">
+      <svg viewBox="0 0 1200 825" preserveAspectRatio="none" focusable="false">
+        <path class="ht-line" d="M 24.0 800.2 C 27.8 799.6 112.3 783.9 120.0 783.8 C 127.7 783.6 209.3 796.5 216.0 796.1 C 222.7 795.8 282.2 777.5 288.0 775.5 C 293.8 773.5 354.7 750.1 360.0 746.6 C 365.3 743.2 414.7 691.1 420.0 688.9 C 425.3 686.7 486.2 691.4 492.0 691.4 C 497.8 691.3 558.2 690.8 564.0 687.2 C 569.8 683.7 631.7 604.8 636.0 602.2 C 640.3 599.7 667.7 626.5 672.0 622.9 C 676.3 619.2 739.7 515.0 744.0 511.5 C 748.3 508.0 775.2 540.5 780.0 536.2 C 784.8 532.0 859.2 408.5 864.0 404.2 C 868.8 400.0 895.2 433.9 900.0 429.0 C 904.8 424.1 979.2 285.4 984.0 280.5 C 988.8 275.6 1015.7 310.5 1020.0 305.2 C 1024.3 300.0 1087.2 158.4 1092.0 148.5 C 1096.8 138.6 1138.1 61.4 1140.0 57.8" fill="none" stroke="#d8b465" stroke-width="6"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="reveal">
+        <h1 class="hero-title">
+          A student record of the<br />
+          <span class="gold-accent"><em>macroeconomy</em></span>.
+        </h1>
+        <p class="hero-lede">
+          WUJOE publishes long-form reviews of the St. Louis local economy, the United States national economy, and the international economy, written by Washington University in St. Louis undergraduates and edited with the rigor of a working journal.
+        </p>
+        <div class="hero-actions">
+          <a href="articles.html" class="btn btn-primary">
+            Read the latest reviews
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="leadership.html" class="btn btn-ghost">Meet the team</a>
+        </div>
+
+        <div class="issue-mini">
+          <span class="label">Recent coverage</span>
+          <p>Artificial intelligence and the macroeconomy, Missouri House Bill 3231, and the crypto-asset economy.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="volume-strip">
+        <div class="volume-strip-inner">
+          <span class="vs-item"><strong>Published on a rolling basis</strong></span>
+          <span class="vs-item">Washington University in St. Louis</span>
+          <span class="vs-item">St. Louis, Missouri</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Description -->
+  <section class="section">
+    <div class="container">
+      <div class="about reveal">
+        <div class="about-side">
+          <h2>An undergraduate look at the working economy.</h2>
+        </div>
+
+        <div class="about-body">
+          <p>
+            The Washington University Journal of Economics is a student publication that covers the state of the economy at three scales: the St. Louis local economy, the United States national economy, and the international economy. Our writers review the data releases, policy decisions, and market moves that shape the moment.
+          </p>
+          <p>
+            We publish on a rolling basis rather than in fixed editions, so reviews go up as they are finished. Recent work covers artificial intelligence and the economy, Missouri House Bill 3231, and the crypto-asset economy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured articles -->
+  <section class="section" style="background: var(--paper-warm);" id="featured">
+    <div class="container">
+      <div class="reveal" style="display: flex; justify-content: space-between; align-items: baseline; gap: 2rem; margin-bottom: var(--gap-6); flex-wrap: wrap;">
+        <div>
+          <h2 style="max-width: 22ch;">Latest reviews.</h2>
+        </div>
+        <a href="articles.html" class="btn-link">
+          Browse all articles
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="featured-grid reveal-stagger">
+        <a href="articles/stablecoin-digital-dollarization.html" class="feature-card large">
+          <div class="thumb">
+            <img src="assets/topics/stablecoin.jpg?v=3f3365f6" alt="Illustration of a Tether stablecoin token balanced on a US dollar coin" loading="lazy" />
+          </div>
+          <div class="body">
+            <span class="tag">Crypto-Asset Economy</span>
+            <h3>The Advent of Digital Dollarization: Stablecoins, Foreign Economies, and Banking</h3>
+            <p class="excerpt">
+              Dollar-pegged stablecoins are now easier to hold than the dollar itself. Jack Powers and John Haase take the case of Nigeria, Africa's largest crypto market, and find that stablecoin demand responds to Naira devaluation and cools inflation in the short run, while pressure on banking deposits runs only indirectly.
+            </p>
+            <p class="byline">
+              <span class="author">Jack Powers and John Haase</span>
+              <span class="dot"></span>
+              <span>June 21, 2026</span>
+            </p>
+          </div>
+        </a>
+
+        <div class="featured-side-stack">
+          <a href="articles/ai-midwestern-markets.html" class="feature-card">
+            <div class="thumb">
+              <img src="assets/topics/ai-midwest.jpg?v=d4d2b6f4" alt="Illustration of a Midwestern town with factories, grain silos, a robot arm and a data dashboard, workers reviewing plans, beneath an AI chip motif" loading="lazy" />
+            </div>
+            <div class="body">
+              <span class="tag">Technology and Growth</span>
+              <h3>How the Midwest Economy Can Benefit From Artificial Intelligence</h3>
+              <p class="byline">
+                <span class="author">Sara Izhar and Josh Goodglick</span>
+                <span class="dot"></span>
+                <span>June 7, 2026</span>
+              </p>
+            </div>
+          </a>
+
+          <!-- TEMPORARILY WITHDRAWN from the site at the authors' request, pending a more thorough revision. The article itself is untouched at articles/stl-school-funding.html. To restore, delete this comment wrapper (search: TEMPORARILY WITHDRAWN).
+          <a href="articles/stl-school-funding.html" class="feature-card">
+            <div class="thumb">
+              <img src="assets/topics/school-funding.jpg?v=7b87e75f" alt="Illustration of a one-room schoolhouse used as a coin bank, with a coin dropping into a slot in its roof" loading="lazy" />
+            </div>
+            <div class="body">
+              <span class="tag">St. Louis Economy</span>
+              <h3>Fragmented Governance and School Funding Inequality in St. Louis</h3>
+              <p class="byline">
+                <span class="author">Oleks Zolochevskyi and Nikki Zheng</span>
+                <span class="dot"></span>
+                <span>May 17, 2026</span>
+              </p>
+            </div>
+          </a>
+          -->
+
+          <a href="articles/hb3231-st-louis.html" class="feature-card">
+            <div class="thumb">
+              <img src="assets/topics/hb3231.jpg?v=39ce0d1d" alt="Aerial rendering of the Cortex Innovation Community in St. Louis, showing mixed-use blocks, green space and a central boulevard" loading="lazy" />
+            </div>
+            <div class="body">
+              <span class="tag">Missouri Policy</span>
+              <h3>The Space and Place of St. Louis: The Economic Impact of HB 3231</h3>
+              <p class="byline">
+                <span class="author">Suri Li and Harper Rowden</span>
+                <span class="dot"></span>
+                <span>May 31, 2026</span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership preview -->
+  <section class="section section-navy">
+    <div class="container">
+      <div class="leadership-pre reveal">
+        <div class="leadership-pre-text">
+          <h2>Written by students. Edited like a journal.</h2>
+          <p class="lede">
+            WUJOE is led by an undergraduate executive board, with project leads carrying each review from first draft through publication. Every piece is written and edited by Washington University in St. Louis students.
+          </p>
+          <a href="leadership.html" class="btn-link">
+            Meet the team
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="leadership-portrait-stack">
+          <div class="p"><img src="assets/team/jack-powers.jpg?v=92bb2d66" alt="Jack Powers" loading="lazy" /></div>
+          <div class="p"><img src="assets/team/rishii-parthasarathy.jpg?v=d34db9e6" alt="Rishii Parthasarathy" loading="lazy" /></div>
+          <div class="p"><img src="assets/team/brooke-hathhorn.jpg?v=dff53eb7" alt="Brooke Hathhorn" loading="lazy" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="brand-marks" viewBox="0 0 571 635" fill="none" aria-hidden="true">
+              <g fill="none" stroke-width="30" stroke-linecap="square" stroke-linejoin="miter">
+                <path class="mk-gold" d="M205 208 L18 323 L171 403"/>
+                <path class="mk-gold" d="M398 113 L553 18 L553 275"/>
+                <path class="mk-navy" d="M321 485 L553 617 L553 430"/>
+              </g>
+            </svg>
+            <span class="brand-text">
+              <span class="b-washu">WashU</span>
+              <span class="b-journal">Journal of</span>
+              <span class="b-econ">Economics</span>
+            </span>
+          </a>
+          <p>An undergraduate review of the St. Louis, national, and international economy, published at Washington University in St. Louis since 2026.</p>
+        </div>
+        <div>
+          <h4>The Journal</h4>
+          <ul>
+            <li><a href="articles.html">All articles</a></li>
+            <li><a href="leadership.html">The team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:wujoe@wustl.edu">wujoe@wustl.edu</a></li>
+            <li>School of Arts and Sciences</li>
+            <li>St. Louis, Missouri</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>(c) 2026 Washington University Journal of Economics.</span>
+        <span>Written by students. Edited like a journal.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
