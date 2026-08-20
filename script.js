@@ -39,6 +39,9 @@
   // ---- Scroll-reveal (single + stagger) ----
   var reveals = document.querySelectorAll(".reveal, .reveal-stagger");
   if ("IntersectionObserver" in window && reveals.length) {
+    // Only now is it safe to hide anything: the observer exists and is about
+    // to run. Until this class lands, .reveal elements render normally.
+    document.documentElement.classList.add("reveal-on");
     var io = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
@@ -48,7 +51,11 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      // threshold MUST stay 0. A ratio of 0.12 meant an element had to show
+      // 12% of its own area, which a section taller than ~8x the viewport can
+      // never do -- on phones, where text reflows much taller, whole sections
+      // of an article stayed invisible permanently.
+      { threshold: 0, rootMargin: "0px 0px -8% 0px" }
     );
     reveals.forEach(function (el) { io.observe(el); });
 
@@ -68,6 +75,26 @@
     window.addEventListener("load", revealInView, { once: true });
     window.addEventListener("pageshow", revealInView);
     if (location.hash) setTimeout(revealInView, 80);
+
+    // Backstop: if the observer ever fails to fire, scrolling still reveals
+    // whatever has come into view, so no content can be scrolled past while
+    // invisible. Costs nothing once everything has revealed.
+    var ticking = false;
+    var onScroll = function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        ticking = false;
+        revealInView();
+        for (var i = 0; i < reveals.length; i++) {
+          if (!reveals[i].classList.contains("is-in")) return;
+        }
+        window.removeEventListener("scroll", onScroll);
+        window.removeEventListener("resize", onScroll);
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
   } else {
     reveals.forEach(function (el) { el.classList.add("is-in"); });
   }

@@ -860,12 +860,17 @@ p { margin: 0 0 1em; }
 }
 
 /* ---------- Scroll reveal ---------- */
-.reveal {
+/* The base state is the finished, readable one. The hidden start is applied
+   only under .reveal-on, which JS adds to <html> once the observer is wired
+   up -- so a script error, a disabled script, or an observer that never fires
+   leaves the article fully readable instead of blank. */
+.reveal { opacity: 1; transform: none; }
+.reveal-on .reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
 }
-.reveal.is-in {
+.reveal-on .reveal.is-in {
   opacity: 1;
   transform: translateY(0);
 }
@@ -945,18 +950,19 @@ p { margin: 0 0 1em; }
 }
 
 /* Stagger-reveal: a single observer flip animates children with cascade */
-.reveal-stagger > * {
+.reveal-stagger > * { opacity: 1; transform: none; }
+.reveal-on .reveal-stagger > * {
   opacity: 0;
   transform: translateY(22px);
   transition: opacity 0.75s var(--ease-out), transform 0.75s var(--ease-out);
 }
-.reveal-stagger.is-in > * { opacity: 1; transform: translateY(0); }
-.reveal-stagger.is-in > *:nth-child(1) { transition-delay: 0ms; }
-.reveal-stagger.is-in > *:nth-child(2) { transition-delay: 90ms; }
-.reveal-stagger.is-in > *:nth-child(3) { transition-delay: 180ms; }
-.reveal-stagger.is-in > *:nth-child(4) { transition-delay: 270ms; }
-.reveal-stagger.is-in > *:nth-child(5) { transition-delay: 360ms; }
-.reveal-stagger.is-in > *:nth-child(6) { transition-delay: 450ms; }
+.reveal-on .reveal-stagger.is-in > * { opacity: 1; transform: translateY(0); }
+.reveal-on .reveal-stagger.is-in > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-on .reveal-stagger.is-in > *:nth-child(2) { transition-delay: 90ms; }
+.reveal-on .reveal-stagger.is-in > *:nth-child(3) { transition-delay: 180ms; }
+.reveal-on .reveal-stagger.is-in > *:nth-child(4) { transition-delay: 270ms; }
+.reveal-on .reveal-stagger.is-in > *:nth-child(5) { transition-delay: 360ms; }
+.reveal-on .reveal-stagger.is-in > *:nth-child(6) { transition-delay: 450ms; }
 
 /* Navy section variant: color invert for sections with .section-navy */
 .section-navy {
@@ -1469,23 +1475,14 @@ p { margin: 0 0 1em; }
   /* break out wider than the reading column on large screens */
   width: 100%;
 }
-.figure-wide {
-  margin: 2.4rem 0;
-}
-@media (min-width: 1180px) {
-  /* Break out to the right only. The left gutter is just var(--gap-6) = 48px
-     wide, so a symmetric breakout used to run under the sticky TOC. */
-  .figure-wide {
-    width: calc(100% + 130px);
-    margin-left: 0;
-    margin-right: -130px;
-  }
-}
-/* Inset figure: sits comfortably inside the reading column */
+/* Every figure spans exactly the reading column -- no breakouts, no narrow
+   insets. Figures used to break 130px past the right margin on wide screens,
+   which read as misaligned against the text and gave the page a ragged edge. */
+.figure-wide,
 .figure-inset {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 2.4rem 0;
 }
 .figure figure { margin: 0; }
 .figure .frame {
@@ -1514,7 +1511,14 @@ p { margin: 0 0 1em; }
 .figure figcaption em { font-style: italic; }
 
 /* Data table (Figure 3) */
-.data-table-wrap { margin: 2rem 0; }
+.data-table-wrap {
+  margin: 2rem 0;
+  /* contain wide tables: on a phone this scrolls inside the box instead of
+     stretching the document and pushing the article off-screen */
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 .data-table {
   width: 100%;
   border-collapse: collapse;
